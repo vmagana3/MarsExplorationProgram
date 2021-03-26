@@ -1,0 +1,249 @@
+//Color Palete//
+$black:#000000;
+$blue: #7190A3;
+$blackClear: #394253;
+$orangeSurface:#E17248;
+$brown:#673428;
+$white:#FFFFFF;
+
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Lexend', sans-serif;     
+    
+    //Main Banner//
+    #MainBanner{        
+        width: 100%;
+        height: 600px; 
+        background-image: url(../images/mars.png); 
+        background-size: cover;     
+        margin-bottom: -1%;    
+        #BannerTitle{
+            position: absolute;
+            color:$white;
+            font-weight: 700;
+            font-size: 400%;
+            margin-top: 7%;            
+            margin-left: 5%;
+        }  
+        #MainPrhase{
+            position: absolute;
+            color:$white;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 150%;
+            margin-top: 15%;
+            margin-left: 5%;            
+        }
+        #VisitNasa{
+            position: absolute;
+            color: $white;
+            font-weight: 300;
+            left: 72%;
+            top: 16%;
+            a{
+                color: $white;
+                text-decoration: none;
+                border-bottom: 1px solid $white;
+            }
+        }
+        #NasaSocialNetworks{                       
+            height: 30%;            
+            position: absolute;
+            left: 75%;
+            top: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            img{
+                width: 25%;
+                align-self: center;
+            }
+        }
+        #NasaButton{
+            input{
+                position: absolute;
+                top: 45%;
+                left:5%;
+                width: 20%;
+                border: none;
+                border-radius: 10px;
+                font-size: 110%;
+                font-weight: 200;
+                padding: 1%;                
+                background-color: $blackClear;
+                color: $white;
+                font-family: 'Lexend', sans-serif; 
+            }
+            input:hover{
+                cursor: pointer;
+                transform: scale(1.01);
+                transition:0.8s;
+            }
+        }
+    }
+    
+    //Objetivos//
+    #ObjetivesContainer{
+        width: 100%;
+        height: auto;   
+        color: white;    
+        padding-top: 10%;          
+        background: linear-gradient(90deg, rgba(0,0,0,0.9668242296918768) 0%, rgba(14,16,18,1) 100%);
+        #Section1{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;                                                                  
+            #MepTitle{
+                display: flex;
+                align-self: center;
+                #ObjetiveTitle{
+                    font-size: 350%;
+                    font-weight: 200;                
+                    align-self: center;
+                    margin: 0; 
+                    margin-right: 5%;                                               
+                }   
+                #ObjetiveSubTitle{
+                    font-size: 500%;
+                    margin: 0;                                                         
+                }     
+            }
+            #MepDescription{
+                align-self: center;
+                font-size: 150%;
+                font-weight: 100;
+                a{
+                    font-weight: 500;
+                     border-bottom: 1px solid $white;                   
+                }
+            }
+                            
+        }
+        
+        #Section2{
+            width: 100%; 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+                        
+            .ObjetiveCard{
+                width: 15%;
+                margin: 1%; 
+                padding: 1%;                               
+                #GoalNumber{                    
+                    width: 25%;
+                    margin: 2% 0% 5% 0%;
+                    font-weight: 200;
+                    font-size: 250%;  
+                    border-bottom: 1px solid $orangeSurface;                  
+                }
+                #GoalTitle{
+                    font-weight: 400%;
+                    font-size: 200%; 
+                    margin: 0%;                   
+                }
+                #GoalText{
+                    font-weight: 200;                    
+                }
+            }                                  
+        }
+    }
+}
+
+
+//Mobile Style//
+@media(max-width:380px){
+    body{
+        #MainBanner{            
+            background-position: 20% 20%;   
+            display: flex;  
+            flex-direction: column;   
+            height: 500px; 
+            padding-top: 20%;                                                          
+            #BannerTitle{
+                position: relative;
+                margin: 0;
+                font-size: 240%;
+                padding: 10%;                
+            }   
+            #MainPrhase{
+                position: relative;
+                margin: 0;
+                font-size: 90%;     
+                padding: 0% 20% 10% 10%;                                                                               
+            }   
+            #VisitNasa{
+                display: none;
+                position: absolute;                
+                left: 0;
+                top: 100%;
+                padding-left: 5%;                
+            }    
+            #NasaSocialNetworks{                                                                 
+                position: absolute;
+                top: 100%;
+                display: none;                               
+            }
+            #NasaButton{
+                padding-left: 10%;                                               
+                input{
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                    width: 60%;
+                    font-size: 80%;
+                    border-radius: 5%; 
+                    padding: 5%;
+                }                
+            }                               
+        }
+
+        #ObjetivesContainer{
+            #Section1{ 
+                margin-bottom: -10%;                              
+                #MepTitle{
+                    flex-direction: column;  
+                    #ObjetiveTitle{
+                        font-size: 190%;
+                    }   
+                    #ObjetiveSubTitle{
+                        font-size: 300%;
+                    }                                                      
+                }
+                #MepDescription{                    
+                    font-size: 90%;
+                    padding: 5%;
+                    text-align: center;                    
+                }
+            }   
+
+
+            #Section2{
+                width: 100%;
+                flex-direction: column;                
+                .ObjetiveCard{
+                    width: 100%;  
+                    margin: 0%;    
+                    padding: 0%; 
+                    display: flex;
+                    flex-direction: column;                     
+                    margin-top: 15%;                                                                                           
+                    #GoalNumber{
+                        width: 40%;
+                        margin: 0%;
+                        align-self: center;                        
+                    }
+                    .centerMobile{
+                        text-align: center;                  
+                        padding: 2% 10% 0% 10%; 
+                        font-size: 90%;                                                                                            
+                    }                                                                           
+                }                
+            }         
+        }
+    }
+}

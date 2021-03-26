@@ -1,0 +1,223 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Lexend", sans-serif;
+}
+body #MainBanner {
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/mars.png);
+  background-size: cover;
+  margin-bottom: -1%;
+}
+body #MainBanner #BannerTitle {
+  position: absolute;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 400%;
+  margin-top: 7%;
+  margin-left: 5%;
+}
+body #MainBanner #MainPrhase {
+  position: absolute;
+  color: #FFFFFF;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 150%;
+  margin-top: 15%;
+  margin-left: 5%;
+}
+body #MainBanner #VisitNasa {
+  position: absolute;
+  color: #FFFFFF;
+  font-weight: 300;
+  left: 72%;
+  top: 16%;
+}
+body #MainBanner #VisitNasa a {
+  color: #FFFFFF;
+  text-decoration: none;
+  border-bottom: 1px solid #FFFFFF;
+}
+body #MainBanner #NasaSocialNetworks {
+  height: 30%;
+  position: absolute;
+  left: 75%;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body #MainBanner #NasaSocialNetworks img {
+  width: 25%;
+  align-self: center;
+}
+body #MainBanner #NasaButton input {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 20%;
+  border: none;
+  border-radius: 10px;
+  font-size: 110%;
+  font-weight: 200;
+  padding: 1%;
+  background-color: #394253;
+  color: #FFFFFF;
+  font-family: "Lexend", sans-serif;
+}
+body #MainBanner #NasaButton input:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: 0.8s;
+}
+body #ObjetivesContainer {
+  width: 100%;
+  height: auto;
+  color: white;
+  padding-top: 10%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9668242297) 0%, #0e1012 100%);
+}
+body #ObjetivesContainer #Section1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body #ObjetivesContainer #Section1 #MepTitle {
+  display: flex;
+  align-self: center;
+}
+body #ObjetivesContainer #Section1 #MepTitle #ObjetiveTitle {
+  font-size: 350%;
+  font-weight: 200;
+  align-self: center;
+  margin: 0;
+  margin-right: 5%;
+}
+body #ObjetivesContainer #Section1 #MepTitle #ObjetiveSubTitle {
+  font-size: 500%;
+  margin: 0;
+}
+body #ObjetivesContainer #Section1 #MepDescription {
+  align-self: center;
+  font-size: 150%;
+  font-weight: 100;
+}
+body #ObjetivesContainer #Section1 #MepDescription a {
+  font-weight: 500;
+  border-bottom: 1px solid #FFFFFF;
+}
+body #ObjetivesContainer #Section2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body #ObjetivesContainer #Section2 .ObjetiveCard {
+  width: 15%;
+  margin: 1%;
+  padding: 1%;
+}
+body #ObjetivesContainer #Section2 .ObjetiveCard #GoalNumber {
+  width: 25%;
+  margin: 2% 0% 5% 0%;
+  font-weight: 200;
+  font-size: 250%;
+  border-bottom: 1px solid #E17248;
+}
+body #ObjetivesContainer #Section2 .ObjetiveCard #GoalTitle {
+  font-weight: 400%;
+  font-size: 200%;
+  margin: 0%;
+}
+body #ObjetivesContainer #Section2 .ObjetiveCard #GoalText {
+  font-weight: 200;
+}
+
+@media (max-width: 380px) {
+  body #MainBanner {
+    background-position: 20% 20%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding-top: 20%;
+  }
+  body #MainBanner #BannerTitle {
+    position: relative;
+    margin: 0;
+    font-size: 240%;
+    padding: 10%;
+  }
+  body #MainBanner #MainPrhase {
+    position: relative;
+    margin: 0;
+    font-size: 90%;
+    padding: 0% 20% 10% 10%;
+  }
+  body #MainBanner #VisitNasa {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding-left: 5%;
+  }
+  body #MainBanner #NasaSocialNetworks {
+    position: absolute;
+    top: 100%;
+    display: none;
+  }
+  body #MainBanner #NasaButton {
+    padding-left: 10%;
+  }
+  body #MainBanner #NasaButton input {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 60%;
+    font-size: 80%;
+    border-radius: 5%;
+    padding: 5%;
+  }
+  body #ObjetivesContainer #Section1 {
+    margin-bottom: -10%;
+  }
+  body #ObjetivesContainer #Section1 #MepTitle {
+    flex-direction: column;
+  }
+  body #ObjetivesContainer #Section1 #MepTitle #ObjetiveTitle {
+    font-size: 190%;
+  }
+  body #ObjetivesContainer #Section1 #MepTitle #ObjetiveSubTitle {
+    font-size: 300%;
+  }
+  body #ObjetivesContainer #Section1 #MepDescription {
+    font-size: 90%;
+    padding: 5%;
+    text-align: center;
+  }
+  body #ObjetivesContainer #Section2 {
+    width: 100%;
+    flex-direction: column;
+  }
+  body #ObjetivesContainer #Section2 .ObjetiveCard {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+  }
+  body #ObjetivesContainer #Section2 .ObjetiveCard #GoalNumber {
+    width: 40%;
+    margin: 0%;
+    align-self: center;
+  }
+  body #ObjetivesContainer #Section2 .ObjetiveCard .centerMobile {
+    text-align: center;
+    padding: 2% 10% 0% 10%;
+    font-size: 90%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
