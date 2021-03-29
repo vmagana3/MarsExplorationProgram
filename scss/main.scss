@@ -85,12 +85,13 @@ body{
         }
     }
     
-    //Objetivos//
+    //Goals//
     #ObjetivesContainer{
         width: 100%;
         height: auto;   
         color: white;    
-        padding-top: 10%;          
+        padding-top: 10%; 
+        padding-bottom: 10%;         
         background: linear-gradient(90deg, rgba(0,0,0,0.9668242296918768) 0%, rgba(14,16,18,1) 100%);
         #Section1{
             width: 100%;
@@ -151,6 +152,66 @@ body{
                 }
             }                                  
         }
+    }
+
+    //Background//
+    #backgroundContainer{
+        width: 100%;
+        height: auto;        
+        margin-top: -1%;
+        display: flex;
+        flex-direction: column;  
+        justify-content: space-around;                    
+        background-image: url(../images/background.jpg);
+        background-size: contain;
+        #MEPBackground{
+            display: flex;
+            justify-content: center;
+            color: $white;
+            #ObjetiveTitle{
+                font-size: 350%;
+                font-weight: 200;                
+                align-self: center;
+                margin: 0; 
+                margin-right: 5%;
+            }
+            #ObjetiveSubTitle{
+                font-size: 500%;
+            }            
+        }
+        .backgroundCard{                       
+            width: 100%;   
+            height: auto;
+            display: flex;           
+            justify-content: space-around;   
+            color: $white; 
+            .container{
+                width: 40%;
+                padding: 2%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;                                
+                .backTitle{
+                    font-size: 200%;
+                    font-weight: 500;
+                    border-bottom: 1px solid $orangeSurface;
+                    margin: 0%;                    
+                }  
+                .backContext{
+                    font-size: 100%;
+                    font-weight: 200;
+                    text-align: justify;
+                }            
+            }
+            img{
+                width: 50%;     
+                align-self: center;                        
+            } 
+            img:hover{
+                transform: scale(1.01);
+                transition-duration: 1s;                                                
+            }             
+        }              
     }
 }
 

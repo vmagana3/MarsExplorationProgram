@@ -76,6 +76,7 @@ body #ObjetivesContainer {
   height: auto;
   color: white;
   padding-top: 10%;
+  padding-bottom: 10%;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.9668242297) 0%, #0e1012 100%);
 }
 body #ObjetivesContainer #Section1 {
@@ -133,6 +134,64 @@ body #ObjetivesContainer #Section2 .ObjetiveCard #GoalTitle {
 }
 body #ObjetivesContainer #Section2 .ObjetiveCard #GoalText {
   font-weight: 200;
+}
+body #backgroundContainer {
+  width: 100%;
+  height: auto;
+  margin-top: -1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url(../images/background.jpg);
+  background-size: contain;
+}
+body #backgroundContainer #MEPBackground {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+}
+body #backgroundContainer #MEPBackground #ObjetiveTitle {
+  font-size: 350%;
+  font-weight: 200;
+  align-self: center;
+  margin: 0;
+  margin-right: 5%;
+}
+body #backgroundContainer #MEPBackground #ObjetiveSubTitle {
+  font-size: 500%;
+}
+body #backgroundContainer .backgroundCard {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  color: #FFFFFF;
+}
+body #backgroundContainer .backgroundCard .container {
+  width: 40%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body #backgroundContainer .backgroundCard .container .backTitle {
+  font-size: 200%;
+  font-weight: 500;
+  border-bottom: 1px solid #E17248;
+  margin: 0%;
+}
+body #backgroundContainer .backgroundCard .container .backContext {
+  font-size: 100%;
+  font-weight: 200;
+  text-align: justify;
+}
+body #backgroundContainer .backgroundCard img {
+  width: 50%;
+  align-self: center;
+}
+body #backgroundContainer .backgroundCard img:hover {
+  transform: scale(1.01);
+  transition-duration: 1s;
 }
 
 @media (max-width: 380px) {
