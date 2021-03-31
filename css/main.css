@@ -142,8 +142,7 @@ body #backgroundContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-image: url(../images/background.jpg);
-  background-size: contain;
+  background-color: #000000;
 }
 body #backgroundContainer #MEPBackground {
   display: flex;
@@ -174,6 +173,9 @@ body #backgroundContainer .backgroundCard .container {
   flex-direction: column;
   justify-content: center;
 }
+body #backgroundContainer .backgroundCard .container span {
+  font-weight: 100;
+}
 body #backgroundContainer .backgroundCard .container .backTitle {
   font-size: 200%;
   font-weight: 500;
@@ -186,11 +188,11 @@ body #backgroundContainer .backgroundCard .container .backContext {
   text-align: justify;
 }
 body #backgroundContainer .backgroundCard img {
-  width: 50%;
+  width: 30%;
   align-self: center;
 }
 body #backgroundContainer .backgroundCard img:hover {
-  transform: scale(1.01);
+  transform: scale(1.4);
   transition-duration: 1s;
 }
 
@@ -275,6 +277,40 @@ body #backgroundContainer .backgroundCard img:hover {
   body #ObjetivesContainer #Section2 .ObjetiveCard .centerMobile {
     text-align: center;
     padding: 2% 10% 0% 10%;
+    font-size: 90%;
+  }
+  body #backgroundContainer {
+    padding-top: 15%;
+  }
+  body #backgroundContainer #MEPBackground {
+    flex-direction: column;
+  }
+  body #backgroundContainer #MEPBackground #ObjetiveTitle {
+    font-size: 190%;
+    margin: 0%;
+  }
+  body #backgroundContainer #MEPBackground #ObjetiveSubTitle {
+    font-size: 250%;
+    margin: 0%;
+    text-align: center;
+  }
+  body #backgroundContainer .splide .backgroundCard {
+    flex-direction: column;
+  }
+  body #backgroundContainer .splide .backgroundCard .container {
+    width: 80%;
+    height: auto;
+    align-self: center;
+    margin-top: 15%;
+  }
+  body #backgroundContainer .splide .backgroundCard .container p {
+    text-align: center;
+  }
+  body #backgroundContainer .splide .backgroundCard .container .backTitle {
+    text-align: center;
+  }
+  body #backgroundContainer .splide .backgroundCard .container .backContext {
+    text-align: center;
     font-size: 90%;
   }
 }

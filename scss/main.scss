@@ -161,9 +161,9 @@ body{
         margin-top: -1%;
         display: flex;
         flex-direction: column;  
-        justify-content: space-around;                    
-        background-image: url(../images/background.jpg);
-        background-size: contain;
+        justify-content: space-around; 
+        background-color: $black;                  
+        
         #MEPBackground{
             display: flex;
             justify-content: center;
@@ -178,19 +178,23 @@ body{
             #ObjetiveSubTitle{
                 font-size: 500%;
             }            
+
         }
         .backgroundCard{                       
             width: 100%;   
             height: auto;
             display: flex;           
             justify-content: space-around;   
-            color: $white; 
+            color: $white;             
             .container{
                 width: 40%;
                 padding: 2%;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;                                
+                justify-content: center;  
+                span{
+                    font-weight: 100;
+                }                
                 .backTitle{
                     font-size: 200%;
                     font-weight: 500;
@@ -201,14 +205,14 @@ body{
                     font-size: 100%;
                     font-weight: 200;
                     text-align: justify;
-                }            
+                }                  
             }
             img{
-                width: 50%;     
-                align-self: center;                        
+                width: 30%;     
+                align-self: center;                                       
             } 
             img:hover{
-                transform: scale(1.01);
+                transform: scale(1.4);
                 transition-duration: 1s;                                                
             }             
         }              
@@ -305,6 +309,45 @@ body{
                     }                                                                           
                 }                
             }         
+        }
+
+        //Background//
+        #backgroundContainer{
+            padding-top: 15%;                        
+            #MEPBackground{
+                flex-direction: column;
+                #ObjetiveTitle{
+                    font-size: 190%;
+                    margin: 0%;
+                }   
+                #ObjetiveSubTitle{
+                    font-size: 250%;
+                    margin: 0%;
+                    text-align: center;                    
+                }                               
+            }
+
+            .splide{                                
+                .backgroundCard{
+                    flex-direction: column;
+                    .container{                        
+                        width: 80%;  
+                        height: auto;
+                        align-self: center;
+                        margin-top: 15%;
+                        p{
+                            text-align: center;
+                        }
+                        .backTitle{
+                            text-align: center;                            
+                        }                      
+                        .backContext{
+                            text-align: center;
+                            font-size: 90%;
+                        }                        
+                    }                    
+                }
+            }
         }
     }
 }
