@@ -295,6 +295,81 @@ body{
             }
         }
     }
+
+    #Future{
+        background-color: $black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding:6%;
+        #futureTitle{
+            width: 50%;
+            font-size: 200%;
+            font-weight: 500;
+            margin-top: -1%; 
+            border-bottom: 1px solid $orangeSurface;                       
+        }
+        .futureText{
+            font-weight: 100;
+            span{
+                font-weight: 500;
+            }        
+        }
+        
+        #knowMore{
+            display: flex;
+            width: 20%;
+            justify-content: space-around;                                   
+            img{
+                align-self: center;
+                width: 10%;
+            }
+            a{
+                color: $white; 
+                align-self: center;
+                text-decoration: none;
+            }
+        }
+    }
+
+    #footer{
+        background-color: $blackClear;
+        display: flex; 
+        justify-content: space-around; 
+        padding: 3%;
+        
+        .footerSection{
+            width: 30%;
+            display: flex;
+            flex-direction: column;            
+            p{
+                text-align: center;        
+                font-weight: 600;
+                font-size: 150%;
+                color: $white;                                
+            }
+
+            .itemsNasa{
+                display: flex;
+                justify-content: space-around;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                    font-weight: 100;
+                }
+            }
+            
+            .items{
+                width: 100%;
+                display: flex;  
+                justify-content: flex-end;                                                                               
+
+                img{
+                    width: 20%;                                        
+                }
+            }
+        }
+    }
 }
 
 
@@ -320,15 +395,9 @@ body{
                 padding: 0% 20% 10% 10%;                                                                               
             }   
             #VisitNasa{
-                display: none;
-                position: absolute;                
-                left: 0;
-                top: 100%;
-                padding-left: 5%;                
+                display: none;                             
             }    
-            #NasaSocialNetworks{                                                                 
-                position: absolute;
-                top: 100%;
+            #NasaSocialNetworks{                                                                                 
                 display: none;                               
             }
             #NasaButton{
@@ -462,6 +531,71 @@ body{
                 }
             }
 
+        }
+
+        #Future{      
+            padding-top: 30%; 
+            padding-bottom: 30%;       
+            #futureTitle{
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                width: 90%;
+                text-align: center;
+                font-weight: 200;
+                span{
+                    font-weight: 500;
+                }
+            }   
+            
+            .futureText{
+                text-align: center;
+            }
+
+            #knowMore{
+                width: 100%;
+                a{
+                    border-bottom: 1px solid $white;
+                }
+                img{
+                    display: none;
+                }
+            }
+        }
+
+        #footer{
+            flex-direction: column;
+
+            .footerSection{
+                width: 100%;
+                margin-top: 15%;
+
+                .itemsNasa{
+                    flex-direction: column;
+                    align-items: center;
+                    a{
+                        margin-bottom: 10%;
+                    }
+                }
+
+                .items{
+                    width: 50%;
+                    flex-direction: column;                    
+                    align-self: center;     
+                    align-content: center;                                                       
+                    a{
+                        align-self: center;                        
+                        margin-top: 4%;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    img{                        
+                        display: inline;
+                        width: 20%;
+                        margin-bottom: 50%;                        
+                    }                    
+                }
+            }
         }
     }
 }

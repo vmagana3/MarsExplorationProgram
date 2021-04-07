@@ -262,6 +262,74 @@ body #ProgramsContainer .cardProgram .ProgramContent {
   margin-left: 2%;
   font-weight: 200;
 }
+body #Future {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 6%;
+}
+body #Future #futureTitle {
+  width: 50%;
+  font-size: 200%;
+  font-weight: 500;
+  margin-top: -1%;
+  border-bottom: 1px solid #E17248;
+}
+body #Future .futureText {
+  font-weight: 100;
+}
+body #Future .futureText span {
+  font-weight: 500;
+}
+body #Future #knowMore {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+body #Future #knowMore img {
+  align-self: center;
+  width: 10%;
+}
+body #Future #knowMore a {
+  color: #FFFFFF;
+  align-self: center;
+  text-decoration: none;
+}
+body #footer {
+  background-color: #394253;
+  display: flex;
+  justify-content: space-around;
+  padding: 3%;
+}
+body #footer .footerSection {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+body #footer .footerSection p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 150%;
+  color: #FFFFFF;
+}
+body #footer .footerSection .itemsNasa {
+  display: flex;
+  justify-content: space-around;
+}
+body #footer .footerSection .itemsNasa a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 100;
+}
+body #footer .footerSection .items {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+body #footer .footerSection .items img {
+  width: 20%;
+}
 
 @media (max-width: 380px) {
   body #MainBanner {
@@ -285,14 +353,8 @@ body #ProgramsContainer .cardProgram .ProgramContent {
   }
   body #MainBanner #VisitNasa {
     display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    padding-left: 5%;
   }
   body #MainBanner #NasaSocialNetworks {
-    position: absolute;
-    top: 100%;
     display: none;
   }
   body #MainBanner #NasaButton {
@@ -411,6 +473,64 @@ body #ProgramsContainer .cardProgram .ProgramContent {
   body #ProgramsContainer .cardProgram p {
     font-size: 90%;
     text-align: center;
+  }
+  body #Future {
+    padding-top: 30%;
+    padding-bottom: 30%;
+  }
+  body #Future #futureTitle {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 90%;
+    text-align: center;
+    font-weight: 200;
+  }
+  body #Future #futureTitle span {
+    font-weight: 500;
+  }
+  body #Future .futureText {
+    text-align: center;
+  }
+  body #Future #knowMore {
+    width: 100%;
+  }
+  body #Future #knowMore a {
+    border-bottom: 1px solid #FFFFFF;
+  }
+  body #Future #knowMore img {
+    display: none;
+  }
+  body #footer {
+    flex-direction: column;
+  }
+  body #footer .footerSection {
+    width: 100%;
+    margin-top: 15%;
+  }
+  body #footer .footerSection .itemsNasa {
+    flex-direction: column;
+    align-items: center;
+  }
+  body #footer .footerSection .itemsNasa a {
+    margin-bottom: 10%;
+  }
+  body #footer .footerSection .items {
+    width: 50%;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+  }
+  body #footer .footerSection .items a {
+    align-self: center;
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+  }
+  body #footer .footerSection .items img {
+    display: inline;
+    width: 20%;
+    margin-bottom: 50%;
   }
 }
 
