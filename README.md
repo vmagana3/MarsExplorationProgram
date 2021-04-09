@@ -8,5 +8,4 @@ https://vmagana3.github.io/MarsExplorationProgram/
 
 
 ## Preview
-![Green Art Landing Page](./images/Preview.PNG)
-![Green Art Landing Page](./images/PreviewMobile.PNG)
+![Mars Exploration Program Page](./images/Preview.PNG)
