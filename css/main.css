@@ -4,6 +4,22 @@ body {
   font-family: "Lexend", sans-serif;
   overflow-x: hidden;
 }
+body #topButton {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 94.5%;
+  top: 80%;
+  position: fixed;
+  background-color: #394253;
+  display: flex;
+  justify-content: center;
+}
+body #topButton img {
+  align-self: center;
+  width: 40%;
+}
 body #MainBanner {
   width: 100%;
   height: 800px;
@@ -338,7 +354,7 @@ body #footer .footerSection .items img {
     display: flex;
     flex-direction: column;
     height: 500px;
-    padding-top: 20%;
+    padding-top: 50%;
   }
   body #MainBanner #BannerTitle {
     position: relative;

@@ -6,13 +6,28 @@ $orangeSurface:#E17248;
 $brown:#673428;
 $white:#FFFFFF;
 
-
-
 body{
     margin: 0%;
     padding: 0%;
     font-family: 'Lexend', sans-serif;   
     overflow-x: hidden;  
+
+    #topButton{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        left: 94.5%;
+        top: 80%;
+        position: fixed;
+        background-color: $blackClear;
+        display: flex;
+        justify-content: center;
+        img{
+            align-self: center;
+            width: 40%;
+        }
+    }
     
     //Main Banner//
     #MainBanner{        
@@ -378,11 +393,11 @@ body{
 @media(max-width:380px){
     body{
         #MainBanner{            
-            background-position: 20% 20%;   
+            background-position: 20% 20%;               
             display: flex;  
             flex-direction: column;   
             height: 500px; 
-            padding-top: 20%;                                                          
+            padding-top: 50%;                                                          
             #BannerTitle{
                 position: relative;
                 margin: 0;
